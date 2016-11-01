@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="container">
-      <form id="banking-page">
-        <h1>Welcome!</h1>
+      <h1>Welcome!</h1>
+      <form id="account-creation">
 
-      <h2>Register a new account:</h2>
+        <h2>Register a new account:</h2>
 
         <div class="form-group">
           <label for="name">Name</label>
@@ -23,6 +23,11 @@
           <label for="init-deposit">Initial Deposit</label>
           <input id="init-deposit" class="form-control" type="text" placeholder="$500.00">
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <form id="account-manipulation">
+        <h2>Manage your account:</h2>
         <div class="form-group">
           <label for="deposit-amount">Deposit Amount:</label>
           <input id="deposit-amount" class="form-control" type="text" placeholder="$500.00">
@@ -31,6 +36,7 @@
           <label for="withdrawal-amount">Withdrawal Amount:</label>
           <input id="withdrawal-amount" class="form-control" type="text" placeholder="$100.00">
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <h3>Current Balance:</h3>
       <p>$<span id=balance></span></p>
